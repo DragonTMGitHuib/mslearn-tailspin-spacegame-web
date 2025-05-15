@@ -11,8 +11,8 @@ const WeatherDisplay = ({ city }) => {
       setLoading(true);
       setError(null);
       try {
-        // MCPサーバー連携（仮エンドポイントと仮レスポンス構造）
-        const response = await fetch('https://example.com/mcp/weather', {
+        // MCPサーバー連携（wetherapiエンドポイントに変更）
+        const response = await fetch('https://wetherapi.example.com/mcp/weather', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
